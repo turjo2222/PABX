@@ -15,6 +15,21 @@ namespace PabxInfo.BLL.BLL
         {
             return _designationRepository.Add(designation);
         }
+
+
+        public bool Delete(Designation designation)
+        {
+            return _designationRepository.Delete(designation);
+        }
+        public Designation GetById(int Id)
+        {
+            return _designationRepository.GetById(Id);
+
+        }
+        public bool Update(Designation designation)
+        {
+            return _designationRepository.Update(designation);
+        }
         public List<Designation> GetAll()
         {
             return _designationRepository.GetAll();

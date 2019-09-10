@@ -10,7 +10,7 @@ namespace PabxInfo.Models.Models
 {
     public class Designation
     {
-        public List<Designation> Designations;
+      
         public int ID { get; set; }
         [Required(ErrorMessage = "Please enter Designation")]
         //[DisplayName("Designation")]

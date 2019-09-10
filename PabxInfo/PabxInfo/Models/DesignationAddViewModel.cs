@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PabxInfo.Models.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -12,5 +13,7 @@ namespace PabxInfo.Models
         [Required(ErrorMessage = "Please enter Designation")]
         [DisplayName ("Designation")]
         public string DesignationName { get; set; }
+        public List<Designation> Designations { get; set; }
+        
     }
 }
